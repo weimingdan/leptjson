@@ -18,3 +18,8 @@ TEST_CASE("test_add", "[add]")
 	int a = 1 + 2;
 	REQUIRE(a == 3);
 }
+
+TEST_CASE("sub_test", "[sub]")
+{
+	REQUIRE(2 - 1 == 1);
+}
