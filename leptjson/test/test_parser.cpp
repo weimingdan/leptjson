@@ -21,5 +21,6 @@ TEST_CASE("test_add", "[add]")
 
 TEST_CASE("sub_test", "[sub]")
 {
-	REQUIRE(2 - 1 == 0);
+	int aa = 1;
+	REQUIRE(aa == 0);
 }
