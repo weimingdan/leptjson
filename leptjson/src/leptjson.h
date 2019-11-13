@@ -68,11 +68,4 @@ namespace Lept
 		return parseValue(&c, v);
 	}
 	TYPE geType(const Value* v);
-
-	int addSome(int a, int b)
-	{
-		b = b + 1;
-		a = a + b;
-		return a + a;
-	}
 }
