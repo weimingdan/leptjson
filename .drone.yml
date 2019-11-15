@@ -12,4 +12,4 @@ steps:
   - echo hello world
 - name: build
   commands: 
-  - G:\vs2019project\leptjson>G:\VS2019\MSBuild\Current\Bin\MSBuild.exe leptjson.sln /t:Rebuild /p:Configuration=Release;Platform=x86
+  - G:\VS2019\MSBuild\Current\Bin\MSBuild.exe leptjson.sln /t:Rebuild /p:Configuration=Release;Platform=x86
