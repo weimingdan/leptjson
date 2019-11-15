@@ -1,0 +1,25 @@
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: windows
+  arch: amd64
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
+
+- name: build
+  commands: 
+  - chcp 65001
+  - G:\VS2019\MSBuild\Current\Bin\MSBuild.exe leptjson.sln /t:Rebuild /p:Configuration=Release /p:Platform=x86
+  - Release\leptjson.exe -r junit -o Release\test.xml
+
+- name: coverage
+  image: plugins/codecov
+  settings:
+    token: c53eb91cbfc646cf81ebc28730bedcc0
+    files:
+     - Release\*.xml
