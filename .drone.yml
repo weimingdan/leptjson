@@ -18,4 +18,5 @@ steps:
 
 - name: test
   commands:
+  - chcp 65001
   - Release\leptjson.exe -r junit -o Release\test.xml
