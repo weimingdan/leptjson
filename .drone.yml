@@ -1,0 +1,6 @@
+pipeline:
+  docker:
+    # registry: {}              # 私有registry地址
+    # auth: {}                  # auth_token
+    image: plugins/docker
+    repo: root/leptjson # 修改为你对应的repo名字
