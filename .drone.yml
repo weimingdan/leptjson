@@ -1,6 +1,12 @@
-pipeline:
-  docker:
-    # registry: {}              # 私有registry地址
-    # auth: {}                  # auth_token
-    image: plugins/docker
-    repo: root/leptjson # 修改为你对应的repo名字
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: windows
+  arch: amd64
+
+steps:
+- name: greeting
+  commands:
+  - echo hello world
