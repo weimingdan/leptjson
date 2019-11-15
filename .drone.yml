@@ -10,8 +10,6 @@ steps:
 - name: greeting
   commands:
   - echo hello world
-
-steps:
 - name: build
   commands: 
   - go build
