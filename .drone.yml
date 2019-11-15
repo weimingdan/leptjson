@@ -15,8 +15,4 @@ steps:
   commands: 
   - chcp 65001
   - G:\VS2019\MSBuild\Current\Bin\MSBuild.exe leptjson.sln /t:Rebuild /p:Configuration=Release
-
-- name: test
-  commands:
-  - chcp 65001
   - Release\leptjson.exe -r junit -o Release\test.xml
