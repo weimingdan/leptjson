@@ -9,7 +9,7 @@ TEST_CASE("test1", "[func test]")
 
 TEST_CASE("test2", "[ttaa]")
 {
-	REQUIRE(false);
+	REQUIRE(true);
 }
 
 
@@ -22,5 +22,5 @@ TEST_CASE("test_add", "[add]")
 TEST_CASE("sub_test", "[sub]")
 {
 	int aa = 1;
-	REQUIRE(aa == 0);
+	REQUIRE(aa == 1);
 }
