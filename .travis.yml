@@ -1,5 +1,1 @@
- "os": [
-    "windows",
-    "linux"
-  ],
-  "language": "cpp"
+"language": "cpp"
